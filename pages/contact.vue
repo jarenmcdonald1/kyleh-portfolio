@@ -5,14 +5,10 @@
 
       <section id="" class="contact-con">
 
-        <h3>Let's Chat</h3>
-        <p>Ask away! Over tea, kale chips, or smoothie bowls...your choice. If you're looking for a way to live a healthier lifestyle, start with an email and we'll set up a chat. You're one decision away from taking the next step.</p>
+        <h3>Say Hello</h3>
         <div class="contact-btns-con pt-4">
-          <a class="btns" href="mailto:hello@rmdholistics.com">
-            <span>hello@rmdholistics.com</span>
-          </a>
-          <a class="btns" href="https://www.instagram.com/rmdholistics">
-            <span>Follow me on Instagram</span>
+          <a class="btns" href="mailto:kyhooper5@gmail.com">
+            <span>kyhooper5@gmail.com</span>
           </a>
         </div>
 

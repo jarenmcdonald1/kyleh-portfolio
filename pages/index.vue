@@ -29,13 +29,13 @@
 
     <div class="body-wrap">
 
-      <section id="whatIs" class="hidden infoCard-con">
+      <section id="whatIs" class="hidden"> <!-- infoCard-con -->
 
         <div class="infoCard-img-con">
           <nuxt-img class="infoCard-img" src="/img/three-breads.jpg" alt="three healthy breads" loading="lazy" fit="cover" />
         </div>
 
-        <div class="infoCard-text-con">
+        <div class="infoCard-text-con hidden">
           <div class="infoCard-text">
             <h3>What is RMD Holistics?</h3>
             <p>RMD Holistics focuses on a complete approach to health and wellness. Our Holistic approach assess issues by digging down to the root of the problem to heal what is underneath the surface.</p>

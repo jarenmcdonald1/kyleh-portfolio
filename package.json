@@ -1,7 +1,7 @@
 {
   "name": "kyle-hooper-portfolio",
   "version": "2.0.0",
-  "description": "Nuxt-Tailwind-NetlifyCMS",
+  "description": "Creating new stories and exciting multimedia content. View samples of some of my previously completed work!",
   "author": "Jaren McDonald <jaren.mcd@gmail.com> (https://jaren.ca)",
   "scripts": {
     "dev": "nuxt",

@@ -129,11 +129,11 @@ body {
 }
 
 .contact-con {
-  max-width: 600px;
-  @apply bg-main-700 py-3 px-4 rounded-lg shadow-lg;
+  max-width: 700px;
+  @apply bg-primary-700 py-3 px-4 rounded-lg shadow-lg text-center;
 
   & h3 {
-    @apply font-serif text-4xl text-main-200;
+    @apply text-4xl text-primary-200;
   }
 
   & .contact-btns-con {
@@ -150,6 +150,12 @@ body {
 }
 
 @screen sm {
+  .banner-links-con {
+    @apply flex-row justify-center items-center;
+    & .banner-links-btn {
+      @apply py-6 w-full text-2xl text-gray-300;
+    }
+  }
   .contact-con {
     & h3 {
       @apply text-6xl;
@@ -270,17 +276,17 @@ body {
 
 .light-mode {
   & .contact-con {
-    @apply bg-gray-200;
+    @apply bg-primary-300;
 
     & h3 {
-      @apply text-main-600;
+      @apply text-primary-700;
     }
 
     & .btns {
-      @apply bg-transparent border border-main-600 text-main-600;
+      @apply font-medium bg-transparent border border-primary-600 text-primary-600;
 
       &:hover {
-        @apply bg-main-600 text-white;
+        @apply bg-primary-600 text-white;
       }
     }
   }
@@ -297,7 +303,7 @@ body {
       & h2,
       & h3,
       & h4 {
-        @apply text-main-500;
+        @apply text-primary-500;
       }
     }
   }
