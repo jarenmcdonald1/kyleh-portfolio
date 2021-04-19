@@ -1,8 +1,8 @@
-# Rachel's Blog Site
+# Kyle Hooper's Portfolio Site
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e6ccaad0-a6a0-491f-afa7-5aca4a74fc09/deploy-status)](https://app.netlify.com/sites/rmdblog-test/deploys)
 
-View live site here: [rmdholistics.com](https://rmdholistics.com/)
+View live site here: [y.com](https://jaren.ca/)
 
 ### About the site
 

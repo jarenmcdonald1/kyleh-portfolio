@@ -10,16 +10,28 @@
         class="card-link card--clickable w-full"
       >
         <template v-if="postType === 'projects'">
-          <span class="flex-1">
-            <h6 class="inline-block py-1 px-2 mr-1 bg-gray text-white text-sm font-medium rounded-sm">{{ post.category }}</h6>
-            <h3 class="card-title">{{ post.title }}</h3>
-            <p class="mt-2">{{ post.description }}</p>
-          </span>
-          <img
-            v-if="post.cover"
-            class="cover-image"
-            :src="post.cover"
-          >
+          <div class="samplePost-con">
+            <nuxt-img 
+              v-if="post.cover"
+              :src="post.cover"
+              class="post-img"
+              loading="lazy"
+              object="cover"
+              :alt="post.title"
+            />
+            <div class="samplePost-text">
+              <h6 class="inline-block py-1 px-2 mr-1 bg-primary-700 text-gray-200 text-sm font-medium rounded-sm">{{ post.category }}</h6>
+              <h3 class="card-title">{{ post.title }}</h3>
+              <p class="mt-2 mb-4">{{ post.description }}</p>
+              <nuxt-link 
+              :to="`${postType}/${post.slug}`"
+              :title="post.title"
+              class="post-readmore"
+              >
+              View more >
+              </nuxt-link>
+            </div>
+          </div>
         </template>
 
         <template v-else>

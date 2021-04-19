@@ -6,8 +6,8 @@
 
       <div class="footer-nav-con">
         <nuxt-link class="nav-links" to="/#aboutMe">About</nuxt-link>
-        <nuxt-link class="nav-links" to="/#whatIs">Services</nuxt-link>
-      <nuxt-link class="nav-links" to="/blog">Blog</nuxt-link>
+        <nuxt-link class="nav-links" to="/projects">Projects</nuxt-link>
+      <nuxt-link class="nav-links hidden" to="/blog">Blog</nuxt-link>
         <nuxt-link class="nav-links" to="/contact">Contact</nuxt-link>
       </div>
 
@@ -39,17 +39,17 @@ export default {
 <style lang="postcss" scoped>
 
 .footer-main-con {
-  @apply mt-0 w-full py-6 px-3 bg-main-700;
+  @apply mt-0 w-full py-6 px-3 bg-primary-700;
 }
 
 .footer-nav-con {
   @apply flex flex-col items-center justify-center;
 
   & .nav-links {
-    @apply px-3 py-2 rounded-lg mb-3 bg-transparent text-center text-lg text-main-200;
+    @apply px-3 py-2 rounded-lg mb-3 bg-transparent text-center text-lg text-primary-200;
 
     &:hover {
-      @apply text-gray-100 bg-main-600;
+      @apply text-gray-100 bg-primary-600;
     }
     &:last-child {
       @apply mb-0;
@@ -58,13 +58,13 @@ export default {
 }
 
 .copyright-con {
-  @apply w-full py-5 bg-main-800;
+  @apply w-full py-5 bg-primary-800;
 
   & .copyright-text {
-    @apply text-center text-main-400;
+    @apply text-center text-primary-400;
   }
   & .copyright-link {
-    @apply fill-current text-main-400 no-underline;
+    @apply fill-current text-primary-400 no-underline;
   }
 }
 

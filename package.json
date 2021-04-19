@@ -1,7 +1,7 @@
 {
-  "name": "rmdholistics",
+  "name": "kyle-hooper-portfolio",
   "version": "2.0.0",
-  "description": "Nuxt-Tailwind-NetlifyCMS boilerplate",
+  "description": "Nuxt-Tailwind-NetlifyCMS",
   "author": "Jaren McDonald <jaren.mcd@gmail.com> (https://jaren.ca)",
   "scripts": {
     "dev": "nuxt",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jarenmcdonald1/rmd-blog-nuxt#readme"
+    "url": "https://github.com/jarenmcdonald1/kyleh-portfolio#readme"
   },
   "license": "MIT",
   "dependencies": {

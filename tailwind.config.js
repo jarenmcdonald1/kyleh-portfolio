@@ -12,8 +12,6 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['Roboto', ...defaultTheme.fontFamily.sans],
-        serif: ['Playfair Display', ...defaultTheme.fontFamily.serif],
-        accent: ['Dancing Script', ...defaultTheme.fontFamily.serif],
       },
       colors: {
         gray: {
@@ -22,6 +20,7 @@ module.exports = {
           '200': 'var(--color-gray-200)',    // #e9ecef
           '300': 'var(--color-gray-300)',    // #dee2e6
           '400': 'var(--color-gray-400)',    // #ced4da
+          '500': 'var(--color-gray)',      // #adb5bd
           default: 'var(--color-gray)',      // #adb5bd
           '600': 'var(--color-gray-600)',    // #6c757d
           '700': 'var(--color-gray-700)',    // #495057
@@ -33,7 +32,8 @@ module.exports = {
           '200': 'var(--color-primary-200)', // #C3CBDC
           '300': 'var(--color-primary-300)', // #9BA8C2
           '400': 'var(--color-primary-400)', // #7686A6
-          default: 'var(--color-primary)',   // #526488
+          '500': 'var(--color-primary-500)',   // #526488
+          default: 'var(--color-primary-500)',   // #526488
           '600': 'var(--color-primary-600)', // #3E4F70
           '700': 'var(--color-primary-700)', // #2C3A57
           '800': 'var(--color-primary-800)', // #1C263B
@@ -50,17 +50,6 @@ module.exports = {
           '800': 'var(--color-main-800)',
           '900': 'var(--color-main-900)',
           default: 'var(--color-main-500)',
-        },
-        pink: {
-          '100': 'var(--color-pink-100)',
-          '200': 'var(--color-pink-200)',
-          '300': 'var(--color-pink-300)',
-          '400': 'var(--color-pink-400)',
-          '500': 'var(--color-pink-500)',
-          '600': 'var(--color-pink-600)',
-          '700': 'var(--color-pink-700)',
-          '800': 'var(--color-pink-800)',
-          default: 'var(--color-pink-500)',
         },
       },
       screens: {

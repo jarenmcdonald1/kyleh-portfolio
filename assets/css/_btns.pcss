@@ -19,18 +19,10 @@
   }
 
   .banner-btn {
-    @apply w-full flex justify-center items-center;
-
-    & .banner-btn-arrow {
-      background-color: rgba(33, 127, 102, 0.25);
-      @apply rounded-full shadow transition duration-200 ease-in-out;
-    }
+    @apply bg-main-800 text-gray-200 rounded-full px-3 py-2 text-lg shadow border border-transparent;
 
     &:hover {
-      & .banner-btn-arrow {
-        background-color: rgba(33, 127, 102, 0.75);
-        @apply shadow-lg;
-      }
+      @apply bg-main-700 text-white shadow-lg border-main-700;
     }
   }
 

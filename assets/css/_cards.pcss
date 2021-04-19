@@ -63,7 +63,7 @@
     @apply block w-full duration-100;
   }
   .card-title {
-    @apply font-medium font-serif text-main-200 text-2xl;
+    @apply font-medium text-gray-200 text-2xl;
   }
 
   .cover-image {
@@ -74,6 +74,38 @@
   .card-link {
     max-width: 600px;
     @apply mx-auto;
+
+    & .samplePost-con {
+      @apply w-full bg-primary-800 rounded-lg overflow-hidden transition duration-200 ease-in-out;
+
+      & .samplePost-text {
+        @apply px-3 py-2 w-full pb-4;
+
+        & .post-readmore {
+          @apply px-3 py-2 border rounded-full border-gray-200 transition duration-200 ease-in-out font-medium;
+
+          &:hover {
+            @apply bg-gray-200 text-primary-700;
+          }
+        }
+      }
+
+      & .post-img {
+        min-width: 100%;
+        min-height: 100%;
+        @apply mb-3 w-auto h-auto rounded-t transition duration-200 ease-in-out;
+      }
+    }
+
+    &:hover {
+      & .samplePost-con {
+        @apply bg-primary-700;
+
+        & .post-img {
+          @apply opacity-75;
+        }
+      }
+    }
   }
 
   .light-mode {
@@ -85,14 +117,14 @@
           &:hover {
             @apply bg-gray-300;
             & .card-title {
-              @apply text-main-400;
+              @apply text-primary-400;
             }
           }
         }
       }
     }
     & .card-title {
-      @apply text-main-600 text-2xl;
+      @apply text-primary-600;
     }
   }
 
@@ -200,6 +232,43 @@
   }
 
   .light-mode {
+    & .card-link {
+      & .samplePost-con {
+        @apply bg-primary-200;
+
+        & .samplePost-text {
+          & .card-title {
+            @apply text-primary-700;
+          }
+          & .post-readmore {
+            @apply bg-transparent border-2 border-primary-700 text-primary-700;
+
+            &:hover {
+              @apply bg-gray-100 text-gray-100 border-gray-100;
+            }
+          }
+        }
+      }
+
+      &:hover {
+        & .samplePost-con {
+          @apply bg-primary-700 border-primary-700 text-white;
+
+          & .card-title,
+          & p {
+            @apply text-white;
+          }
+
+          & .post-readmore {
+            @apply bg-transparent border-gray-200 text-gray-200;
+
+            &:hover {
+              @apply bg-gray-100 text-gray-100 border-gray-100;
+            }
+          }
+        }
+      }
+    }
     & .cards-main-con {
       & .cards-con {
         & .card-text-con {
@@ -221,7 +290,7 @@
               @apply bg-gray-200 shadow-lg;
 
               & .card-title {
-                @apply text-main-700;
+                @apply text-primary-700;
               }
             }
           }

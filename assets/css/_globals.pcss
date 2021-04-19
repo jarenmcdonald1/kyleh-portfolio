@@ -55,7 +55,7 @@ body {
   }
   & .infoCard-text {
     max-width: 600px;
-    @apply bg-main-700 rounded-lg px-4 py-3 shadow-lg;
+    @apply bg-primary-600 rounded-lg px-4 py-3 shadow-lg;
 
     & h3 {
       @apply mb-6 text-4xl;
@@ -112,6 +112,18 @@ body {
       & h2 {
         @apply text-4xl font-serif font-medium text-gray-100 leading-snug;
       }
+    }
+  }
+}
+
+.banner-links-con {
+  @apply w-full mb-12 bg-primary-800 flex flex-col;
+
+  & .banner-links-btn {
+    @apply px-4 py-3 bg-transparent text-gray-200 text-center text-xl font-bold transition duration-200 ease-in-out;
+
+    &:hover {
+      @apply bg-primary-700 text-white;
     }
   }
 }

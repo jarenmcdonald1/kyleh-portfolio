@@ -4,15 +4,15 @@
   * The CSS Variables are then used in tailwind.config.js so that e.g. `bg-primary-200` can be used.
   */
 :root {
-  --color-primary-100: #eceff5;
-  --color-primary-200: #c3cbdc;
-  --color-primary-300: #9ba8c2;
-  --color-primary-400: #7686a6;
-  --color-primary: #526488;
-  --color-primary-600: #3e4f70;
-  --color-primary-700: #2c3a57;
-  --color-primary-800: #1c263b;
-  --color-primary-900: #0d131e;
+  --color-primary-100: #f3f4f6;
+  --color-primary-200: #e5e7eb;
+  --color-primary-300: #d1d5db;
+  --color-primary-400: #9ca3af;
+  --color-primary-500: #6b7280;
+  --color-primary-600: #4b5563;
+  --color-primary-700: #374151;
+  --color-primary-800: #1f2937;
+  --color-primary-900: #111827;
 
   --color-white: #ffffff;
   --color-black: #111111;
@@ -28,50 +28,32 @@
   --color-gray-800: #343a40;
   --color-gray-900: #212529;
 
-  --color-main-100: #96e2ce;
-  --color-main-200: #40d0aa;
-  --color-main-300: #249d7d;
-  --color-main-400: #259b7b;
-  --color-main-500: #217f66;
-  --color-main-600: #1c624f;
-  --color-main-700: #17473a;
-  --color-main-800: #12342b;
-  --color-main-900: #12201c;
-
-  --color-teal-100: #d0e7e7;
-  --color-teal-200: #b2d8d8;
-  --color-teal-300: #66b2b2;
-  --color-teal-400: #008080;
-  --color-teal-500: #006666;
-  --color-teal-600: #004c4c;
-  --color-teal-700: #002d2d;
-  --color-teal-800: #000f0f;
-
-  --color-pink-100: #ffccff;
-  --color-pink-200: #cc99cc;
-  --color-pink-300: #cc66cc;
-  --color-pink-400: #b05bb2;
-  --color-pink-500: #8d4191;
-  --color-pink-600: #642e68;
-  --color-pink-700: #3c1b3f;
-  --color-pink-800: #1a0e1c;
+  --color-main-100: #ecfdf5;
+  --color-main-200: #d1fae5;
+  --color-main-300: #a7f3d0;
+  --color-main-400: #6ee7b7;
+  --color-main-500: #34d399;
+  --color-main-600: #059669;
+  --color-main-700: #047857;
+  --color-main-800: #065f46;
+  --color-main-900: #064e3b;
 
   --text: var(--color-gray-200);
   --text-secondary: var(--color-gray-200);
 
-  --bg: var(--color-main-800);
-  --bg-secondary: var(--color-main-700);
+  --bg: var(--color-primary-900);
+  --bg-secondary: var(--color-primary-800);
 
-  --border-color: var(--color-main-700);
-  --border-color-secondary: var(--color-main-700);
+  --border-color: var(--color-primary-800);
+  --border-color-secondary: var(--color-primary-800);
 }
 
 .light-mode {
   --text: var(--color-gray-800);
-  --text-secondary: var(--color-main-400);
+  --text-secondary: var(--color-primary-400);
 
   --bg: var(--color-white);
-  --bg-secondary: var(--color-gray-100);
+  --bg-secondary: var(--color-gray-200);
 
   --border-color: var(--color-gray-400);
   --border-color-secondary: var(--color-gray-500);
