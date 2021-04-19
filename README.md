@@ -1,12 +1,12 @@
 # Kyle Hooper's Portfolio Site
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/e6ccaad0-a6a0-491f-afa7-5aca4a74fc09/deploy-status)](https://app.netlify.com/sites/rmdblog-test/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/edb87992-e559-4057-b246-8b5fab4aea26/deploy-status)](https://app.netlify.com/sites/kyleh-portfolio/deploys)
 
-View live site here: [y.com](https://jaren.ca/)
+View live site here: [kyleh-portfolio.netlify.app](https://kyleh-portfolio.netlify.app/)
 
 ### About the site
 
-This is a business site meant to attract potential clients and existing customers to my services. I use the blog to post updates and stories that keep users coming back for more content!
+This is a portfolio website meant to attract potential employers.
 
 ### Improvements
 
