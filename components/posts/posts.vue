@@ -35,7 +35,7 @@
         </template>
 
         <template v-else>
-          <div class="card-con">
+          <div class="hidden">
 
             <div v-if="post.cover" class="card-img-con">
               <nuxt-img

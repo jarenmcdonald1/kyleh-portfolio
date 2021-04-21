@@ -113,6 +113,8 @@ collections:
     format: 'frontmatter'
     slug: '{{slug}}'
     preview_path: 'projects/{{slug}}'
+    editor:
+      preview: false
     fields:
       - {
           label: 'Project Category',
@@ -121,6 +123,7 @@ collections:
           default: 'writing',
           options: [{ label: 'Writing', value: 'writing' }, { label: 'Multimedia', value: 'multimedia' }],
         }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime', required: true }
       - { label: 'Title', name: 'title', widget: 'string', required: true }
       - {
           label: 'Description',
