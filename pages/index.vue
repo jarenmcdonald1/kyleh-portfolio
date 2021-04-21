@@ -21,9 +21,9 @@
 
     <section id="bannerLinks" class="banner-links-con">
 
-        <nuxt-link class="banner-links-btn" to="/projects" title="view my projects">View some of my work</nuxt-link>
+        <nuxt-link class="flex-1 banner-links-btn" to="/projects" title="view my projects">View some of my work</nuxt-link>
 
-        <nuxt-link class="banner-links-btn" to="/contact" title="go to contact page">Let's talk!</nuxt-link>
+        <nuxt-link class="flex-1 banner-links-btn" to="/contact" title="go to contact page">Let's talk!</nuxt-link>
 
     </section>
 

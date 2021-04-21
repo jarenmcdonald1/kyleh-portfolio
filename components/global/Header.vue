@@ -48,10 +48,10 @@ export default {
 }
 
 .logo-link {
-  @apply text-gray-200 text-4xl;
+  @apply text-main-400 text-4xl;
 
   &:hover {
-    @apply text-white;
+    @apply text-gray-200;
   }
 }
 
@@ -60,13 +60,13 @@ export default {
 }
 
 .nav-btn {
-  @apply px-2 py-1 text-gray-200 bg-transparent transition duration-150 ease-in-out rounded border border-transparent;
+  @apply px-2 py-1 text-gray-400 bg-transparent transition duration-150 ease-in-out rounded border border-transparent;
 
   &:hover {
-    @apply text-white bg-primary-600;
+    @apply text-gray-200 bg-primary-700;
   }
   &:focus {
-    @apply bg-primary-600 text-gray-200;
+    @apply bg-primary-700 text-gray-200;
   }
 }
 
@@ -75,10 +75,10 @@ export default {
 }
 
 .nav-links {
-  @apply block mb-1 px-3 py-2 text-gray-200 text-center text-2xl bg-transparent rounded;
+  @apply block mb-1 px-2 py-4 text-gray-300 text-center font-bold  uppercase text-2xl bg-transparent rounded;
 
   &:hover {
-    @apply bg-primary-600 text-white;
+    @apply bg-primary-700 text-main-500;
   }
 }
 
@@ -92,10 +92,10 @@ export default {
   }
 
   .nav-links {
-    @apply mb-0 mx-1 px-3 py-2 text-lg font-light text-gray-200 bg-transparent;
+    @apply mb-0 mx-1 px-3 py-2 text-base font-medium text-gray-300 bg-transparent;
 
     &:hover {
-      @apply bg-primary-600 text-white;
+      @apply bg-primary-700 text-main-500;
     }
   }
 }
@@ -106,10 +106,10 @@ export default {
   }
 
   & .logo-link {
-    @apply text-primary-800;
+    @apply text-primary-700;
 
     &:hover {
-      @apply text-primary-600;
+      @apply text-main-700;
     }
   }
 
@@ -117,10 +117,10 @@ export default {
     @apply text-gray-600;
 
     &:hover {
-      @apply text-white bg-primary-600;
+      @apply text-primary-700 bg-primary-300;
     }
     &:focus {
-      @apply text-white bg-primary-600;
+      @apply text-primary-700 bg-primary-300;
     }
   }
 
@@ -128,7 +128,7 @@ export default {
     @apply text-primary-600;
 
     &:hover {
-      @apply bg-primary-600 text-white;
+      @apply bg-primary-500 text-gray-100;
     }
   }
 }
@@ -138,7 +138,7 @@ export default {
     & .nav-links {
       @apply px-0 py-1 mx-4 border-b-2 border-transparent text-gray-600 font-normal rounded-none;
       &:hover {
-        @apply bg-transparent border-primary-600 text-primary-700;
+        @apply bg-transparent border-main-500 text-main-600;
       }
     }
 

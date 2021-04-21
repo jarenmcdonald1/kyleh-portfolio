@@ -1,5 +1,5 @@
-site_url: https://rmdblog-test.netlify.app/
-logo_url: https://rmdblog-test.netlify.app/icon.png
+site_url: https://kyleh-portfolio.netlify.app/
+logo_url: https://ntn-boilerplate.netlify.app/icon.png
 
 publish_mode: editorial_workflow
 backend:
@@ -35,7 +35,41 @@ collections:
               widget: string,
               pattern: ['^[a-z]{2}([-])?([A-Za-z]{2})?$', 'Must match "xx" or "xx-XX" syntax (ex. "en" or "sv-SE")'],
             }
-          # - { label: Site Email, name: siteemail, widget: string, required: false }
+          - {
+              label: Site Email,
+              name: siteemail,
+              widget: string,
+              hint: 'Please enter the email you wish users to see on this site.',
+              required: false,
+            }
+          - {
+              label: Twitter link,
+              name: twitterLink,
+              widget: string,
+              hint: 'Paste the full URL from your profile page, ex: https://twitter.com/yourAccount',
+              required: false,
+            }
+          - {
+              label: Instagram link,
+              name: instalink,
+              widget: string,
+              hint: 'Paste the full URL from your profile page, ex: https://instagram.com/yourAccount',
+              required: false,
+            }
+          - {
+              label: YouTube link,
+              name: youtubelink,
+              widget: string,
+              hint: 'Paste the full URL from your profile page, ex: https://youtube.com/yourAccount',
+              required: false,
+            }
+          - {
+              label: LinkedIn link,
+              name: linkedinlink,
+              widget: string,
+              hint: 'Paste the full URL from your profile page, ex: https://linkedin.com/yourAccount',
+              required: false,
+            }
   - name: 'blog'
     label: 'Blog'
     folder: 'content/blog'
@@ -47,7 +81,13 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string', required: true }
       - { label: 'Publish Date', name: 'date', widget: 'datetime', required: true }
-      - { label: 'Description', name: 'description', widget: 'string', required: false }
+      - {
+          label: 'Description',
+          name: 'description',
+          widget: 'string',
+          hint: 'Using one or two sentances, provide a sample of the post.',
+          required: false,
+        }
       - {
           label: 'Cover Image',
           name: 'cover',
@@ -78,12 +118,32 @@ collections:
           label: 'Project Category',
           name: 'category',
           widget: 'select',
-          default: 'animals',
-          options: [{ label: 'Animals', value: 'animals' }, { label: 'Food', value: 'food' }],
+          default: 'writing',
+          options: [{ label: 'Writing', value: 'writing' }, { label: 'Multimedia', value: 'multimedia' }],
         }
       - { label: 'Title', name: 'title', widget: 'string', required: true }
-      - { label: 'Description', name: 'description', widget: 'string', required: false }
-      - { label: 'Cover Image', name: 'cover', widget: 'image', required: false, allow_multiple: false }
+      - {
+          label: 'Description',
+          name: 'description',
+          widget: 'string',
+          hint: 'Using one or two sentances, provide a sample of the post.',
+          required: false,
+        }
+      - {
+          label: 'Cover Image',
+          name: 'cover',
+          widget: 'image',
+          hint: 'Images sized 1200px x 800px work best.',
+          required: false,
+          allow_multiple: false,
+        }
+      - {
+          label: 'Video Cover',
+          name: 'videolink',
+          widget: 'string',
+          required: false,
+          hint: 'ONLY PASTE THE END OF THE URL, ex: https://youtube.com/embed/_____',
+        }
       - { label: 'Content', name: 'body', widget: 'markdown', required: false }
       - {
           label: 'Gallery',

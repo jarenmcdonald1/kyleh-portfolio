@@ -6,11 +6,23 @@
       </nav>
 
       <article>
-        <img
+        <nuxt-img
           v-if="post.cover"
           class="cover-image"
           :src="post.cover"
-        >
+          :alt="post.title"
+        />
+
+        <div v-if="projectPost.videoLink">
+          <div class="w-full">
+            <iframe class="mx-auto" :src="`https://www.youtube.com/embed/${post.videolink}`"
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
+                picture-in-picture" allowfullscreen
+            >
+            </iframe>
+          </div>
+        </div>
+
         <!-- <h6 class="inline py-1 px-2 mr-1 bg-gray text-white text-sm font-medium rounded-sm">{{ post.category }}</h6> -->
         <h1 class="">{{ post.title }}</h1>
         <p class="mt-1 mb-8 text-primary-600 dark:text-primary-400">{{ post.description }}</p>

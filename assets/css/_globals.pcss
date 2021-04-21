@@ -117,13 +117,13 @@ body {
 }
 
 .banner-links-con {
-  @apply w-full mb-12 bg-primary-800 flex flex-col;
+  @apply w-full mb-12 bg-primary-800 flex flex-row justify-center items-stretch;
 
   & .banner-links-btn {
-    @apply px-4 py-3 bg-transparent text-gray-200 text-center text-xl font-bold transition duration-200 ease-in-out;
+    @apply px-5 py-3 bg-transparent text-gray-300 text-center text-xl font-bold transition duration-200 ease-in-out flex justify-center items-center;
 
     &:hover {
-      @apply bg-primary-700 text-white;
+      @apply bg-primary-700 text-gray-100;
     }
   }
 }
@@ -140,6 +140,10 @@ body {
     @apply px-2 flex flex-col justify-center items-center;
   }
 
+  & .contact-btns-con.icons {
+    @apply flex-row flex-wrap;
+  }
+
   & .btns {
     @apply py-2 px-3 my-2 mx-2 bg-transparent border-2 border-gray-300 rounded-full transition duration-200 ease-in-out;
 
@@ -147,13 +151,16 @@ body {
       @apply bg-gray-200 border-gray-300 text-main-700;
     }
   }
+
+  & .btns.icons {
+    @apply border;
+  }
 }
 
 @screen sm {
   .banner-links-con {
-    @apply flex-row justify-center items-center;
     & .banner-links-btn {
-      @apply py-6 w-full text-2xl text-gray-300;
+      @apply py-6 w-full text-2xl;
     }
   }
   .contact-con {

@@ -1,7 +1,7 @@
 <template>
   <main>
 
-    <div class="body-wrap mt-16 py-8 flex justify-center items-center">
+    <div class="body-wrap mt-3py-8 flex justify-center items-center">
 
       <section id="" class="contact-con">
 
@@ -11,22 +11,27 @@
             <span>kyhooper5@gmail.com</span>
           </a>
         </div>
+        <div class="contact-btns-con icons pt-4">
+          <a class="btns icons" href="https://www.linkedin.com">
+            <span class="sr-only">linkedin.com/youracct</span>
+            li
+          </a>
+          <a class="btns icons" href="https://www.youtube.com">
+            <span class="sr-only">youtube.com/youracct</span>
+            yt
+          </a>
+          <a class="btns icons" href="https://www.instagram.com">
+            <span class="sr-only">instagram.com/youracct</span>'i'
+          </a>
+          <a class="btns icons" href="https://www.twitter.com">
+            <span class="sr-only">twitter.com/youracct</span>
+            t
+          </a>
+        </div>
 
       </section>
 
     </div>
-
-    <section class="index-sub-con hidden">
-      <div class="sub-text-con">
-        <div class="sub-text">
-          <h4>Subscribe to my Newsletter!</h4>
-        </div>
-      </div>
-      <div class="index-sub hidden">
-        <div class="sub-input"></div>
-        <div class="sub-submit"></div>
-      </div>
-    </section>
 
   </main>
 </template>
