@@ -1,5 +1,6 @@
 ---
 category: writing
+date: 2021-04-21T16:35:26.683Z
 title: Placeholder Kittens
 description: Used when it is necessary to take up space, to let viewers
   understand that they should provide their own content
