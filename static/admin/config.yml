@@ -116,6 +116,7 @@ collections:
     editor:
       preview: false
     fields:
+      - { label: 'Title', name: 'title', widget: 'string', required: true }
       - {
           label: 'Project Category',
           name: 'category',
@@ -124,7 +125,6 @@ collections:
           options: [{ label: 'Writing', value: 'writing' }, { label: 'Multimedia', value: 'multimedia' }],
         }
       - { label: 'Publish Date', name: 'date', widget: 'datetime', required: true }
-      - { label: 'Title', name: 'title', widget: 'string', required: true }
       - {
           label: 'Description',
           name: 'description',

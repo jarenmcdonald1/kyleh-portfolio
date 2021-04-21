@@ -1,7 +1,7 @@
 ---
+title: Placeholder Bears
 category: multimedia
 date: 2020-09-03T05:18:35.500Z
-title: Placeholder Bears
 description: 'Necessary to show how a project with the category Animals is used'
 cover: https://placebear.com/400/200
 videolink: rbE53XUtVw0

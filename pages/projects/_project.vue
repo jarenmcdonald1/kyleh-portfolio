@@ -13,7 +13,7 @@
           :alt="post.title"
         />
 
-        <div v-if="projectPost.videoLink">
+        <div v-if="post.videolink">
           <div class="w-full">
             <iframe class="mx-auto" :src="`https://www.youtube.com/embed/${post.videolink}`"
                 frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
@@ -52,5 +52,11 @@ export default {
     }
     return { post };
   },
+  methods: {
+    formatDate(dateString) {
+      const date = new Date(dateString)
+      return date.toLocaleDateString(process.env.lang) || ''
+    }
+  }
 }
 </script>
