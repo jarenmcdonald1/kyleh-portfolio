@@ -1,9 +1,12 @@
 ---
-category: animals
+category: multimedia
+date: 2021-04-21T16:36:09.962Z
 title: Fill Murrays
 description: Yet another placeholding project, but with Bills
 cover: https://www.fillmurray.com/g/400/200
-gallery: ['https://www.fillmurray.com/g/800/400', 'https://www.fillmurray.com/600/600']
+gallery:
+  - https://www.fillmurray.com/g/800/400
+  - https://www.fillmurray.com/600/600
 ---
 
 It is easy to write **markdown**-*enabled* content like this placeholder text, with support for images.
