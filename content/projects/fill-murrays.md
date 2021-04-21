@@ -1,6 +1,6 @@
 ---
 category: multimedia
-date: 2021-04-21T16:36:09.962Z
+date: 2021-04-20T18:36:09.962Z
 title: Fill Murrays
 description: Yet another placeholding project, but with Bills
 cover: https://www.fillmurray.com/g/400/200
