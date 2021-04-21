@@ -1,9 +1,12 @@
 ---
-category: food
+category: multimedia
+date: 2021-04-21T16:35:49.582Z
 title: Placeholder Bacon
 description: What is life without bacon?
 cover: https://baconmockup.com/400/200
-gallery: ['https://baconmockup.com/600/300', 'https://baconmockup.com/600/600']
+gallery:
+  - https://baconmockup.com/600/300
+  - https://baconmockup.com/600/600
 ---
 
 It is easy to write **markdown**-*enabled* content like this placeholder text, with support for images.
