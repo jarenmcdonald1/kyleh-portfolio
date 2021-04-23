@@ -2,7 +2,7 @@
   <main>
     <section v-if="posts" class="w-full max-w-5xl mx-auto">
       <h1 class="title">Projects</h1>
-      <posts post-type="projects" :amount="99" />
+      <PostsIndex post-type="projects" :amount="99" />
     </section>
   </main>
 </template>

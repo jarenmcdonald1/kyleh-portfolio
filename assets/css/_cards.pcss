@@ -300,111 +300,38 @@
   }
 
   .posts-main-con {
-    @apply w-full px-3 flex flex-wrap;
+    @apply w-full px-3 flex flex-col bg-transparent;
   }
 
   .posts-con {
-    @apply mb-4;
+    @apply mb-4 bg-transparent;
   }
 
-  .post-con {
-    @apply grid grid-cols-1 grid-rows-1 bg-main-700 rounded-lg overflow-hidden;
-
-    & .post-text-con {
-      grid-row: 1/2;
-      grid-column: 1/2;
-      background-color: rgba(33, 127, 102, 0.05);
-      @apply z-20 px-4 py-8 flex justify-center items-center transition duration-200 ease-in-out;
-    }
-
-    & .post-img-con {
-      grid-row: 1/2;
-      grid-column: 1/2;
-      max-height: 400px;
-      @apply z-10 w-full h-full;
-
-      & .post-img {
-        min-height: 100%;
-        min-width: 100%;
-        @apply w-auto h-full object-cover object-center;
-      }
-    }
-  }
-
-  .post-text {
-    & .card-title {
-      @apply mb-4 text-white font-medium text-3xl leading-none;
-    }
-    & .post-btn {
-      @apply rounded-full px-4 py-2 border-2 border-gray-200;
-
-      &:hover {
-        @apply bg-gray-100 text-main-700;
-      }
-    }
-  }
-
-  .post--clickable {
-    &:hover {
-      & .post-text-con {
-        background-color: rgba(33, 127, 102, 0.75);
-      }
-    }
-  }
-
-  @screen md {
-    .posts-con {
-      flex: 0 0 50%;
-      height: 400px;
-      @apply px-4 py-4;
-
-      &:first-child,
-      &:nth-child(5n + 1) {
-        flex: 0 0 100%;
-      }
-
-      & .post-con {
-        @apply h-full;
-      }
-    }
-  }
-
-  .light-mode {
-    & .post-con {
-      @apply bg-gray-200;
-
-      & .post-text-con {
-        background-color: rgba(33, 127, 102, 0.25);
-      }
-    }
+  .post-link {
+    @apply bg-primary-600 text-gray-300;
 
     & .post-text {
-      & .post-btn {
-        @apply text-gray-100 border-gray-100;
+      @apply px-4 bg-transparent;
 
-        &:hover {
-          @apply bg-white text-main-700;
-        }
-      }
       & p,
       & h6 {
-        @apply text-gray-200;
+        @apply font-light leading-tight;
+      }
+
+      & .card-title {
+        @apply mb-4 font-medium text-3xl leading-none text-gray-300;
+      }
+      & .post-btn {
+        @apply rounded-full px-4 py-2 border border-gray-300;
+
+        &:hover {
+          @apply bg-gray-100 border-gray-100 text-main-700;
+        }
       }
     }
 
-    & .post--clickable {
-      &:hover {
-        & .post-text-con {
-          background-color: rgba(33, 127, 102, 0.75);
-        }
-        & .post-text {
-          & p,
-          & h6,
-          & .card-title {
-            @apply text-white;
-          }
-        }
-      }
+    &:hover {
+      @apply bg-primary-500;
     }
   }
 
@@ -453,6 +380,94 @@
         grid-row: 1/5;
         grid-column: 1/6;
         @apply justify-self-center self-center;
+      }
+    }
+  }
+
+  .cards {
+    @apply w-full py-4 rounded-lg text-left;
+    & .card {
+      @apply flex flex-col justify-between items-start max-w-5xl mx-auto px-4 py-4 rounded border border-solid border-primary;
+
+      & .cover-image {
+        @apply mb-0 w-full rounded-sm;
+      }
+
+      &.card--clickable {
+        &:hover {
+          @apply border-primary-300 bg-primary-800 text-white;
+          & .card-title {
+            @apply text-white;
+          }
+        }
+      }
+    }
+
+    & li + li,
+    & .card + .card {
+      @apply mt-4;
+    }
+  }
+  .card {
+    @apply block w-full duration-100;
+  }
+  .card-title {
+    @apply font-bold;
+  }
+
+  .cover-image {
+    max-height: 500px;
+    @apply w-full object-cover rounded my-4;
+  }
+
+  .light-mode {
+    & .cards {
+      & .card {
+        @apply border-primary-400;
+
+        &.card--clickable {
+          &:hover {
+            @apply border-primary bg-primary-200 text-primary-900;
+            & .card-title {
+              @apply text-primary-900;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .vue-content-placeholders-heading__content {
+    @apply opacity-75;
+    & .vue-content-placeholders-heading__title {
+      @apply h-6 mb-5 mt-1;
+    }
+  }
+  .dark-mode {
+    & .vue-content-placeholders-heading__title {
+      @apply bg-primary;
+    }
+    & .vue-content-placeholders-heading__subtitle {
+      @apply bg-primary-400;
+    }
+  }
+
+  @screen sm {
+    .cards {
+      & .card {
+        @apply flex-row;
+        & .cover-image {
+          @apply mt-0 ml-2 w-1/2;
+        }
+      }
+    }
+  }
+  @screen md {
+    .cards {
+      & .card {
+        & .cover-image {
+          @apply w-1/3;
+        }
       }
     }
   }

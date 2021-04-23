@@ -1,14 +1,14 @@
 <template>
-  <div v-if="posts.length > 0" class="posts-main-con">
-    <div
+  <ul v-if="posts.length > 0" class="cards">
+    <li
       v-for="(post, index) in posts"
       :key="index"
-      class="posts-con"
+      class="px-3 md:px-10"
     >
       <nuxt-link
-        :to="`${post.slug}`"
-        class="post-link post--clickable"
-        :title="post.title"
+        :to="`${postType}/${post.slug}`"
+        class="card card--clickable"
+        :title="`Read more about ${post.title}`"
       >
         <template v-if="postType === 'projects'">
           <span class="flex-1">
@@ -16,41 +16,30 @@
             <h3 class="card-title">{{ post.title }}</h3>
             <p class="mt-2">{{ post.description }}</p>
           </span>
-          <img
+          <nuxt-img
             v-if="post.cover"
             class="cover-image"
             :src="post.cover"
-          >
+            :alt="post.description"
+            loading="lazy"
+          />
         </template>
 
         <template v-else>
-          <div class="post-con">
-            <div class="post-text-con">
-              <div class="post-text">
+          <span class="w-full">
+            <span class="flex justify-between align-baseline">
               <h3 class="card-title">{{ post.title }}</h3>
               <h6
                 v-if="post.createdAt"
-                class="leading-tight font-normal text-sm"
-              >{{ formatDate(post.date) }}</h6>
-              <p class="pb-6 leading-tight">{{ post.description }}</p>
-              <nuxt-link :to="`${post.slug}`" class="post-btn" :title="`Read more about ${post.title}`">Read more</nuxt-link>
-              </div>
-            </div>
-            <div v-if="post.cover" class="post-img-con">
-              <nuxt-img
-                v-if="post.cover"
-                :src="post.cover" 
-                class="post-img"
-                loading="lazy"
-                :alt="post.title"
-              />
-            </div>
-          </div>
+                class="self-start inline-block mt-0 py-1 px-2 bg-gray text-white text-base font-medium rounded-sm whitespace-no-wrap"
+              >{{ formatDate(post.createdAt) }}</h6>
+            </span>
+            <p class="mt-2">{{ post.description }}</p>
+          </span>
         </template>
       </nuxt-link>
-    </div>
-  </div>
-
+    </li>
+  </ul>
   <div v-else-if="loading" class="cards">
     <div v-for="placeholder in placeholderClasses" :key="placeholder.id" class="card">
       <content-placeholders :rounded="true" :class="placeholder">
@@ -77,8 +66,7 @@
         default: 10,
         validator: (val) => val >= 0 && val < 100,
       },
-      sortBy: { 
-        // ? https://content.nuxtjs.org/fetching#sortbykey-direction
+      sortBy: { // ? https://content.nuxtjs.org/fetching#sortbykey-direction
         type: Object,
         default: () => ({
           key: 'date',
