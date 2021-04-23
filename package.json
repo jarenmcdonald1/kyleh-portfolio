@@ -15,8 +15,12 @@
   },
   "license": "MIT",
   "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^5.15.3",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/vue-fontawesome": "^0.1.10",
     "@nuxt/content": "^1.13.1",
-    "nuxt": "^2.15.0"
+    "nuxt": "^2.15.0",
+    "nuxt-fontawesome": "^0.4.0"
   },
   "devDependencies": {
     "@nuxt/image": "^0.4.4",

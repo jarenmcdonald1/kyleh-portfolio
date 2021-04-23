@@ -85,7 +85,22 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxt/content', 'nuxt-purgecss'],
+  modules: [
+    '@nuxt/content',
+    [ 'nuxt-fontawesome', {
+      imports: [
+        {
+          set: '@fortawesome/free-solid-svg-icons',
+          icons: ['fas']
+        },
+        {
+          set: '@fortawesome/free-brands-svg-icons',
+          icons: ['fab']
+        }
+      ]
+    }],
+    'nuxt-purgecss'
+  ],
   /*
    ** Build configuration
    */

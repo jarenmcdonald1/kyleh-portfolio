@@ -12,7 +12,7 @@
         <div class="banner-text">
           <h2>Kyle <span class="font-thin">Hooper</span></h2>
           <h4 class="font-thin mb-6">Digital Content Creator</h4>
-          <nuxt-link class="mt-4 sm:mt-6 banner-btn" to="/#aboutMe" title="learn more">
+          <nuxt-link class="mt-4 sm:mt-6 banner-btn" to="/#bannerLinks" title="learn more">
             About Me
           </nuxt-link>
         </div>

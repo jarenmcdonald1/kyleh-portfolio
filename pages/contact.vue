@@ -14,18 +14,19 @@
         <div class="contact-btns-con icons pt-4">
           <a class="btns icons" href="https://www.linkedin.com">
             <span class="sr-only">linkedin.com/youracct</span>
-            li
+            <font-awesome-icon class="icon" :icon="['fab','linkedin']" />
           </a>
           <a class="btns icons" href="https://www.youtube.com">
             <span class="sr-only">youtube.com/youracct</span>
-            yt
+            <font-awesome-icon class="icon" :icon="['fab','youtube']" />
           </a>
           <a class="btns icons" href="https://www.instagram.com">
-            <span class="sr-only">instagram.com/youracct</span>'i'
+            <span class="sr-only">instagram.com/youracct</span>
+            <font-awesome-icon class="icon" :icon="['fab','instagram']" />
           </a>
           <a class="btns icons" href="https://www.twitter.com">
             <span class="sr-only">twitter.com/youracct</span>
-            t
+            <font-awesome-icon class="icon" :icon="['fab','twitter']" />
           </a>
         </div>
 

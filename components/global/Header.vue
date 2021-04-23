@@ -21,7 +21,7 @@
     </div>
 
     <nav :class="isOpen ? 'block' : 'hidden'" class="nav-con sm:flex">
-      <nuxt-link class="nav-links" to="/#aboutMe">About</nuxt-link>
+      <nuxt-link class="nav-links" to="/about">About</nuxt-link>
       <nuxt-link class="nav-links" to="/projects">Projects</nuxt-link>
       <nuxt-link class="nav-links" to="/contact">Contact</nuxt-link>
     </nav>
