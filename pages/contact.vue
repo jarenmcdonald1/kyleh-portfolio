@@ -7,25 +7,25 @@
 
         <h3>Say Hello</h3>
         <div class="contact-btns-con pt-4">
-          <a class="btns" href="mailto:kyhooper5@gmail.com">
-            <span>kyhooper5@gmail.com</span>
+          <a class="btns" :href="`mailto:${content.siteemail}`" title="Send me an email">
+            <span>{{ content.siteemail }}</span>
           </a>
         </div>
         <div class="contact-btns-con icons pt-4">
-          <a class="btns icons" href="https://www.linkedin.com">
-            <span class="sr-only">linkedin.com/youracct</span>
+          <a v-if="content.linkedinlink" class="btns icons" :href="`${content.linkedinlink}`" title="View my LinkedIn profile">
+            <span class="sr-only">{{ content.linkedinlink }}</span>
             <font-awesome-icon class="icon" :icon="['fab','linkedin']" />
           </a>
-          <a class="btns icons" href="https://www.youtube.com">
-            <span class="sr-only">youtube.com/youracct</span>
+          <a v-if="content.youtubelink" class="btns icons" :href="`${content.youtubelink}`" title="View my YouTube channel">
+            <span class="sr-only">{{ content.youtubelink }}</span>
             <font-awesome-icon class="icon" :icon="['fab','youtube']" />
           </a>
-          <a class="btns icons" href="https://www.instagram.com">
-            <span class="sr-only">instagram.com/youracct</span>
+          <a v-if="content.instalink" class="btns icons" :href="`${content.instalink}`" title="View my Instagram profile">
+            <span class="sr-only">{{ content.instalink }}</span>
             <font-awesome-icon class="icon" :icon="['fab','instagram']" />
           </a>
-          <a class="btns icons" href="https://www.twitter.com">
-            <span class="sr-only">twitter.com/youracct</span>
+          <a v-if="content.twitterlink" class="btns icons" :href="`${content.twitterlink}`" title="View my Twitter profile">
+            <span class="sr-only">{{ content.twitterlink }}</span>
             <font-awesome-icon class="icon" :icon="['fab','twitter']" />
           </a>
         </div>
@@ -43,6 +43,15 @@ export default {
     return {
       script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
     };
+  },
+  async asyncData({$content, error}) {
+    let content;
+    try {
+      content = await $content('site/info').fetch();
+    } catch (e) {
+      error({ message: 'Sorry, site data not found'});
+    }
+    return {content};
   },
 };
 </script>
