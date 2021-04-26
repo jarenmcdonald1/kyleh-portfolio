@@ -1,10 +1,11 @@
 {
-  "sitename": "Kyle Hooper | Digital Content Creator",
-  "sitedescription": "Creating new stories and exciting multimedia content. View samples of some of my previously completed work!",
-  "sitelang": "en-US",
-  "siteemail": "kyhooper5@gmail.com",
   "twitterlink": "https://twitter.com/testing",
+  "twitterLink": "https://instagram.com/testing",
+  "sitename": "Kyle Hooper | Digital Content Creator",
+  "siteemail": "kyhooper5@gmail.com",
   "instalink": "https://instagram.com/testing",
-  "youtubelink": "https://youtube.com/testing",
-  "linkedinlink": "https://linkedin.com/testing"
+  "sitelang": "en-US",
+  "sitedescription": "Creating new stories and exciting multimedia content. View samples of some of my previously completed work!",
+  "linkedinlink": "https://linkedin.com/testing",
+  "youtubelink": "https://youtube.com/testing"
 }
