@@ -6,7 +6,7 @@
       class="px-3 md:px-10"
     >
       <nuxt-link
-        :to="`${postType}/${post.slug}`"
+        :to="`${post.slug}`"
         class="card card--clickable"
         :title="`Read more about ${post.title}`"
       >
