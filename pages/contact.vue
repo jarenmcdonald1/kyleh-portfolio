@@ -6,25 +6,25 @@
       <section id="" class="contact-con">
 
         <h3>Say Hello</h3>
-        <div class="contact-btns-con pt-4">
-          <a class="btns" :href="`mailto:${content.siteemail}`" title="Send me an email">
+        <div class="contact-btns-con pt-4 sm:pt-8">
+          <a class="btns" :href="`mailto:${content.siteemail}`" title="Send an email">
             <span>{{ content.siteemail }}</span>
           </a>
         </div>
         <div class="contact-btns-con icons pt-4">
-          <a v-if="content.linkedinlink" class="btns icons" :href="`${content.linkedinlink}`" title="View my LinkedIn profile">
+          <a v-if="content.linkedinlink" class="btns icons linkedin-color" :href="`${content.linkedinlink}`" title="View my LinkedIn profile">
             <span class="sr-only">{{ content.linkedinlink }}</span>
             <font-awesome-icon class="icon" :icon="['fab','linkedin']" />
           </a>
-          <a v-if="content.youtubelink" class="btns icons" :href="`${content.youtubelink}`" title="View my YouTube channel">
+          <a v-if="content.youtubelink" class="btns icons youtube-color" :href="`${content.youtubelink}`" title="View my YouTube channel">
             <span class="sr-only">{{ content.youtubelink }}</span>
             <font-awesome-icon class="icon" :icon="['fab','youtube']" />
           </a>
-          <a v-if="content.instalink" class="btns icons" :href="`${content.instalink}`" title="View my Instagram profile">
+          <a v-if="content.instalink" class="btns icons insta-color" :href="`${content.instalink}`" title="View my Instagram profile">
             <span class="sr-only">{{ content.instalink }}</span>
             <font-awesome-icon class="icon" :icon="['fab','instagram']" />
           </a>
-          <a v-if="content.twitterlink" class="btns icons" :href="`${content.twitterlink}`" title="View my Twitter profile">
+          <a v-if="content.twitterlink" class="btns icons twitter-color" :href="`${content.twitterlink}`" title="View my Twitter profile">
             <span class="sr-only">{{ content.twitterlink }}</span>
             <font-awesome-icon class="icon" :icon="['fab','twitter']" />
           </a>

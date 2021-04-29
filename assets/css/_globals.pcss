@@ -145,7 +145,7 @@ body {
   }
 
   & .btns {
-    @apply py-2 px-3 my-2 mx-2 bg-transparent border-2 border-gray-300 rounded-full transition duration-200 ease-in-out;
+    @apply py-2 px-3 my-2 mx-2 font-bold text-lg bg-transparent border border-gray-400 rounded-full transition duration-200 ease-in-out;
 
     &:hover {
       @apply bg-gray-200 border-gray-300 text-main-700;
@@ -153,13 +153,35 @@ body {
   }
 
   & .btns.icons {
-    @apply border-transparent flex justify-center items-center;
+    @apply px-2 border-transparent bg-gray-400 flex justify-center items-center font-normal;
+
+    &:hover {
+      @apply bg-primary-500;
+
+      & .icon {
+        @apply text-gray-200;
+      }
+    }
 
     & .icon {
-      width: 25px;
-      height: 25px;
+      width: 22px;
+      height: 22px;
+      @apply fill-current transition duration-200 ease-in-out;
     }
   }
+}
+
+.twitter-color {
+  color: #55acee !important;
+}
+.insta-color {
+  color: #e1306c !important;
+}
+.linkedin-color {
+  color: #0077b5 !important;
+}
+.youtube-color {
+  color: #ff0000 !important;
 }
 
 .embed-r-con {
@@ -303,7 +325,29 @@ body {
   }
 }
 
+.go-back-btn {
+  @apply flex justify-center;
+
+  & .link-btn {
+    @apply py-2 px-3 text-xl font-bold text-gray-300 border border-gray-400 rounded flex justify-center items-center;
+
+    &:hover {
+      @apply text-gray-100 shadow-lg;
+    }
+  }
+}
+
 .light-mode {
+  & .go-back-btn {
+    & .link-btn {
+      @apply text-gray-800 border-gray-600 border-2;
+
+      &:hover {
+        @apply text-white border-gray-700 bg-gray-700;
+      }
+    }
+  }
+
   & .contact-con {
     @apply bg-primary-300;
 
@@ -320,7 +364,11 @@ body {
     }
 
     & .btns.icons {
-      @apply border-none;
+      @apply border-none bg-transparent;
+
+      &:hover {
+        @apply bg-gray-600;
+      }
     }
   }
 

@@ -1,7 +1,7 @@
 <template>
   <main>
 
-    <div class="body-wrap mt-3py-8 flex flex-col justify-center items-center">
+    <div class="body-wrap flex flex-col justify-center items-center">
 
       <h1 class="w-full mb-6 py-3 uppercase font-bold border-b border-main-500">About me</h1>
 

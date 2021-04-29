@@ -13,8 +13,8 @@
         <div class="article-titles-con">
           <h1 class="mb-4">{{ post.title }}</h1>
           <span class="mb-3 flex flex-wrap justify-between items-center">
-            <h6 class="inline py-1 px-2 mr-1 bg-primary-500 text-gray-100 text-sm font-medium rounded-sm">{{ post.category }}</h6>
-            <h6>{{ post.date }}</h6>
+            <h6 class="mt-0 inline py-1 px-2 mr-1 bg-primary-500 text-gray-100 text-sm font-medium rounded-sm">{{ post.category }}</h6>
+            <h6 class="mt-0 inline py-1 px-2">{{ formatDate(post.date) }}</h6>
           </span>
           <p class="mt-1 mb-8">{{ post.description }}</p>
         </div>
@@ -41,8 +41,8 @@
         </div>
       </article>
 
-      <nav class="mb-8" aria-label="go back">
-        <router-back class="block" />
+      <nav class="mb-8 go-back-btn" aria-label="go back">
+        <router-back class="link-btn" />
       </nav>
     </section>
   </main>

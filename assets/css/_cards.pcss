@@ -351,13 +351,15 @@
 
   @screen md {
     .infoCard.about-con {
-      @apply py-12 px-8;
+      @apply py-12 px-8 flex justify-center items-center;
 
       & .infoCard-img-con {
-        @apply w-full rounded overflow-hidden;
+        @apply mr-3 w-full rounded overflow-hidden;
 
         & .infoCard-img {
           max-height: 600px;
+          max-width: 200px;
+          @apply w-full;
         }
       }
 

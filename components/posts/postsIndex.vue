@@ -5,14 +5,15 @@
       :key="index"
       class="px-3 md:px-10"
     >
+    <!-- broke the if/else statement here -->
       <nuxt-link
-        :to="`${post.slug}`"
+        :to="`projects/${post.slug}`" 
         class="card card--clickable"
         :title="`Read more about ${post.title}`"
       >
         <template v-if="postType === 'projects'">
           <span class="flex-1">
-            <h6 class="inline-block py-1 px-2 mr-1 bg-gray text-white text-sm font-medium rounded-sm">{{ post.category }}</h6>
+            <h6 class="inline-block py-1 px-2 mr-1 bg-main-600 dark:bg-main-700 text-white dark:text-gray-100 text-sm font-medium rounded-sm">{{ post.category }}</h6>
             <h3 class="card-title">{{ post.title }}</h3>
             <p class="mt-2">{{ post.description }}</p>
           </span>
