@@ -124,14 +124,6 @@ collections:
           default: 'writing',
           options: [{ label: 'Writing', value: 'writing' }, { label: 'Multimedia', value: 'multimedia' }],
         }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime', required: true }
-      - {
-          label: 'Description',
-          name: 'description',
-          widget: 'string',
-          hint: 'Using one or two sentances, provide a sample of the post.',
-          required: false,
-        }
       - {
           label: 'Cover Image',
           name: 'cover',
@@ -139,6 +131,21 @@ collections:
           hint: 'Images sized 1200px x 800px work best.',
           required: false,
           allow_multiple: false,
+        }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime', required: true }
+      - {
+          label: 'Client Name',
+          name: 'clientname',
+          widget: 'string',
+          hint: 'Add the client/brand you completed the project for.',
+          required: false,
+        }
+      - {
+          label: 'Description',
+          name: 'description',
+          widget: 'string',
+          hint: 'Using one or two sentances, provide a sample of the post.',
+          required: false,
         }
       - {
           label: 'Video Cover',
