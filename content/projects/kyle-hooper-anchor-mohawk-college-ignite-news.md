@@ -10,6 +10,4 @@ A podcast series that I created for MP1st (currently on hold as I have a very bu
 
 Getting an insight into good starting points and story beats that many gamers might not pick up on.
 
-
-
-You can check out episode one above or listen to episode two here (I actually remembered to turn on my higher-quality microphone in episode two)
+You can check out episode one above or listen to episode two [here](https://jimmydv.podbean.com) (I actually remembered to turn on my higher-quality microphone in episode two).
