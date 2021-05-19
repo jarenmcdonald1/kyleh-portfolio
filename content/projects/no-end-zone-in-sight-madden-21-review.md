@@ -1,28 +1,11 @@
 ---
-title: No End Zone In Sight - Madden 21 Review
+title: Madden 21 Review for MP1st.com
 category: writing
-date: 2021-02-25T15:51:13.800Z
-description: With August coming to a close, football fans rejoice!
 cover: /img/d16c0f.png
+date: 2021-02-25T15:51:13.800Z
+clientname: MP1st.com
+description: My early access review of Madden 21
 ---
-With August coming to a close, football fans rejoice! The 2020/2021 NFL Season will be kicking off soon ( although with no fans in the stadiums, thanks corona) and with that comes another yearly installment of Madden.
+I reviewed the newest football video game. Madden 21 review codes were given to me about a week early, so I needed to explore the game and set deadlines to have a piece of the review written each day. Since Madden has so many features and modes, I needed to set expectations of how long I could play each section of the game before moving on to the next.  The review was well received and was out by the launch of Madden 21.  
 
-
-
-Score: 5/10
-
-
-
-Pros:
-
-* The Yard is a fun new addition
-* Sound design is top notch
-* New lineman stick gives more choice to rush or block
-
-
-Cons:
-
-* Graphics are a little dated
-* Little to no improvement in franchise mode
-* MUT still main game mode EA pushes
-* Presentation needs massive improvement
+Read the full review piece [here](https://mp1st.com/news/madden-21-review-no-end-zone-in-sight).
