@@ -1,6 +1,7 @@
 ---
 title: Daunting Games Podcast
 category: multimedia
+cover: /img/mp1st-logo.jpg
 date: 2021-04-26T16:01:29.400Z
 clientname: MP1st.com
 description: A Podcast Series, I am currently working on.
