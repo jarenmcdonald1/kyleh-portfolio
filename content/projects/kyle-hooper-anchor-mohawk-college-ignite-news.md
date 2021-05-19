@@ -1,8 +1,15 @@
 ---
-title: Kyle Hooper, Anchor - Mohawk College Ignite News
-category: writing
+title: Daunting Games Podcast
+category: multimedia
 date: 2021-04-26T16:01:29.400Z
-description: My first time on camera
-videolink: j2lqn_hHKvKAWJRE
+clientname: MP1st.com
+description: A Podcast Series, I am currently working on.
+videolink: DDZ9h9rEtj0
 ---
-My first time on camera
+A podcast series that I created for MP1st (currently on hold as I have a very busy schedule). The series came to me as an idea because my gamers struggle with long-running game series that have a lot of stories that can be hard to catch up on when new entries come out. I planned an episode around a long-running game series then reached out to many content creators that created content around the lore of these games. 
+
+Getting an insight into good starting points and story beats that many gamers might not pick up on.
+
+
+
+You can check out episode one above or listen to episode two here (I actually remembered to turn on my higher-quality microphone in episode two)
