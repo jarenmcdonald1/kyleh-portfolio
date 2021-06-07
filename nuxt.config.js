@@ -158,12 +158,13 @@ export default {
       source: 'static/icon.png',
       filename: 'icon.png'
     },
-    manifest: { name: SITE_INFO.sitename || process.env.npm_package_name || '', lang: process.env.lang },
+    manifest: { name: SITE_INFO.sitename || process.env.npm_package_name || '', lang: process.env.lang, theme_color: COLOR_MODE_FALLBACK },
     meta: {
       name: SITE_INFO.sitename || process.env.npm_package_name || '',
       lang: process.env.lang,
       ogHost: process.env.URL,
-      ogImage: '/preview.jpg'
+      ogImage: '/preview.jpg',
+      theme_color: COLOR_MODE_FALLBACK
     }
   }
 }
