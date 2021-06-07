@@ -149,6 +149,13 @@
       @apply my-8;
     }
     & p {
+      & a {
+        @apply text-main-500 font-bold;
+
+        &:hover {
+          @apply text-gray-100;
+        }
+      }
       & + h1,
       & + h2,
       & + h3,
