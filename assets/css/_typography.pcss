@@ -267,4 +267,17 @@
       }
     }
   }
+
+  .light-mode {
+    & .nuxt-content {
+      & p {
+        & a {
+          @apply text-main-600 font-bold;
+        }
+        & a:hover {
+          @apply text-primary-600;
+        }
+      }
+    }
+  }
 }

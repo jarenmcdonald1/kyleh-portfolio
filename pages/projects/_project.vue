@@ -16,7 +16,7 @@
             <h6 class="mt-0 inline py-1 px-2 mr-1 bg-primary-500 text-gray-100 text-sm font-medium rounded-sm">{{ post.category }}</h6>
             <h6 class="mt-0 inline py-1 px-2">{{ formatDate(post.date) }}</h6>
           </span>
-          <p v-if="post.clientname" class="mt-1 mb-3">{{ post.clientname }}</p>
+          <p v-if="post.clientname" class="mt-1 mb-3"><span class="font-bold">Client:</span> {{ post.clientname }}</p>
           <p v-if="post.description" class="mt-1 mb-8">{{ post.description }}</p>
         </div>
 
