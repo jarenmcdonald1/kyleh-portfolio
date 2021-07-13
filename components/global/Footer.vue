@@ -18,7 +18,7 @@
     </footer>
 
     <div class="copyright-con">
-      <p class="copyright-text">&copy; {{new Date().getFullYear()}} <a class="copyright-link" href="https://jaren.ca" title="Visit Jaren's Site">Jaren McDonald</a></p>  
+      <p class="copyright-text">&copy; {{new Date().getFullYear()}} <a class="copyright-link" href="https://www.jaren.ca" title="Visit Jaren's Site">Jaren McDonald</a></p>  
     </div>  
 
   </div>
