@@ -2,7 +2,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/edb87992-e559-4057-b246-8b5fab4aea26/deploy-status)](https://app.netlify.com/sites/kyleh-portfolio/deploys)
 
-View live site here: [kyleh-portfolio.netlify.app](https://kyleh-portfolio.netlify.app/)
+View live site here: [kylehooper.ca](https://kyleh-portfolio.netlify.app/)
 
 ### About the site
 
